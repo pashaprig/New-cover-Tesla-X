@@ -1,0 +1,17 @@
+.video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 800px;
+  background: $text-color no-repeat url("../img/video-bcg.jpg");
+
+  @media (max-width: $tablet-width) {
+    min-height: 208px;
+    background-size: cover;;
+  }
+
+  & svg {
+    width: 72px;
+    height: 72px;
+  }
+}

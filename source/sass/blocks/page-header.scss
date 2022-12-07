@@ -3,7 +3,7 @@
   flex-direction: column;
   min-height: 800px;
   color: $nav-color;
-  background: $bcg-header no-repeat url("../img/header-bcg.jpg");
+  background: no-repeat url("../img/header-bcg.jpg");
 
   @media (max-width: $tablet-width) {
     background: $bcg-header no-repeat url("../img/header-bcg-mob.jpg");
