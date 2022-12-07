@@ -1,0 +1,31 @@
+.slider {
+  margin-top: 60px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 36px;
+  }
+}
+
+.slider__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 427px;
+
+  @media (max-width: $tablet-width) {
+    max-width: 266px
+  }
+}
+
+.slider__text {
+  margin: 16px 0;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  color: $basic-black;
+
+  @media (max-width: $tablet-width) {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
