@@ -3,17 +3,25 @@
   align-items: center;
 
   @media (max-width: $tablet-width) {
+    box-sizing: border-box;
     position: absolute;
     top: 0;
     right: 0;
     z-index: 2;
     display: block;
-    min-height: 80%;
-    padding-top: 88px;
-    box-shadow: 0 5px 15px rgba(231, 229, 229, 0.9);
+    min-height: 370px;
+    min-width: 300px;
+    padding: 55px 44px;
+    background: $bcg-mobile-menu;
+    color: $basic-white;
 
-    &--closed .main-nav__list {
-      display: none;
+    &--closed {
+      min-width: unset;
+      padding: 0;
+
+      & .main-nav__list {
+        display: none;
+      }
     }
   }
 }
@@ -34,37 +42,27 @@
   gap: 34px;
 
   @media (max-width: $tablet-width) {
-    display: block;
-    padding-right: 16px;
-    padding-left: 16px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
 .main-nav__item {
-  cursor: pointer;
 
   @media (max-width: $tablet-width) {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: start;
     width: 100%;
     min-height: 28px;
-    margin-bottom: 20px;
-
-    &:last-child {
-      position: absolute;
-      bottom: 60px;
-      right: 16px;
-      margin-bottom: 0;
-    }
   }
 }
 
 .main-nav__item a {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 23px;
-  color: $basic-black;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: $nav-color;
 
   @media (max-width: $tablet-width) {
     font-size: 18px;
@@ -82,15 +80,12 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 15px;
-  right: 16px;
+  top: 2px;
+  right: 15px;
   display: none;
   z-index: 2;
-  padding: 6px 14px;
-  background-color: $btn-color;
+  padding: 0;
   border: none;
-  border-radius: 40px;
-  cursor: pointer;
 
   @media (max-width: $tablet-width) {
     display: block;
@@ -103,7 +98,7 @@
   position: absolute;
   top: 15px;
   right: 23px;
-  width: 23px;
+  width: 26px;
   height: 2px;
   background-color: $basic-white;
   box-shadow: 0 9px 0 0 $basic-white, 0 18px 0 0 $basic-white;
@@ -121,17 +116,17 @@
 
 //Крестик на css
 .main-nav--opened .main-nav__toggle {
-  background-color: $basic-white;
+  background-color: $bcg-mobile-menu-close;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
     top: 25px;
-    right: 5px;
+    right: 15px;
     width: 32px;
     height: 3px;
-    background-color: $basic-black;
+    background-color: $bcg-mobile-menu-close;
   }
 
   &::before {
@@ -151,16 +146,5 @@
   &:active::before,
   &:active::after {
     opacity: 0.3;
-  }
-}
-
-.main-nav__open-btn-text {
-  font-family: "Segoe-UI", "Arial", sans-serif;
-  color: $basic-black;
-
-  @media (max-width: $tablet-width) {
-    font-weight: 350;
-    font-size: 14px;
-    line-height: 120%;
   }
 }

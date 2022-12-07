@@ -1,14 +1,38 @@
 /* Fonts */
 
-//Montserrat
+// Gotham
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: "Gotham";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Montserrat Regular"),
-    url("../fonts/montserrat/Montserrat-Regular400.woff2") format("woff2"),
-    url("../fonts/montserrat/Montserrat-Regular400.woff") format("woff"),
-    url("../fonts/montserrat/Montserrat-Regular400.ttf") format("truetype");
+  src: local("Gotham Book"),
+    url("../fonts/gotham/GothamBook.woff2") format("woff2"),
+    url("../fonts/gotham/GothamBook.woff") format("woff"),
+    url("../fonts/gotham/GothamBook.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Gotham Medium"),
+    url("../fonts/gotham/GothamMedium.woff2") format("woff2"),
+    url("../fonts/gotham/GothamMedium.woff") format("woff"),
+    url("../fonts/gotham/GothamMedium.ttf") format("truetype");
+}
+
+// Inter
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Inter Regular"),
+    url("../fonts/inter/Inter-Regular400.woff2") format("woff2"),
+    url("../fonts/inter/Inter-Regular400.woff") format("woff"),
+    url("../fonts/inter/Inter-Regular400.ttf") format("truetype");
 }

@@ -29,26 +29,11 @@ a {
 }
 
 .btn {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 260px;
-  margin-bottom: 25px;
-  padding: 14px 28px;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 120%;
-  color: $basic-white;
-  text-transform: uppercase;
-  background-color: $gold;
-  border: 1px solid $gold;
-  border-radius: 4px;
-
-  &:hover {
-    color: $gold;
-    background-color: transparent;
-  }
+  cursor: pointer;
 }
 
 .mobile-only {

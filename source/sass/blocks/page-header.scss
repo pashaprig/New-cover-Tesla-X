@@ -1,11 +1,58 @@
 .page-header {
   display: flex;
-  background-color: lightblue;
+  flex-direction: column;
+  min-height: 800px;
+  color: $nav-color;
+  background: $bcg-header no-repeat url("../img/header-bcg.jpg");
 
-  @media (min-width: $tablet-width) {
+  @media (max-width: $tablet-width) {
+    background: $bcg-header no-repeat url("../img/header-bcg-mob.jpg");
+    background-color: #141414;
+    background-size: cover;
+    background-position-y: -157px;
   }
 }
 
-.daily-pay__icon {
-  fill: white;
+.header__top {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 76px;
+  padding: 0 96px;
+  background-color: $bcg-header;
+
+  @media (max-width: $tablet-width) {
+    align-items: baseline;
+    justify-content: start;
+    height: 55px;
+    padding: 18px 16px;
+  }
+}
+
+.header__bottom {
+  padding: 100px 96px;
+
+  @media (max-width: $tablet-width) {
+    padding: 25px 16px;
+  }
+}
+
+.header__heading {
+  max-width: 585px;
+  margin-bottom: 80px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 18px 320px;
+    font-size: 24px;
+    line-height: 29px;
+    text-shadow: $basic-black 2px 0 10px;
+  }
+}
+
+.page-header .form {
+  max-width: 375px;
 }

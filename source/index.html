@@ -17,43 +17,55 @@
 
 <body class="page-body">
   <header class="page-header">
-    <div class="logo">
-      <svg class="daily-pay__icon" width="69" height="69">
-        <use xlink:href="img/sprite.svg#money"></use>
+    <div class="header__top">
+      <svg width="192" height="28">
+        <use xlink:href="img/sprite.svg#logo"></use>
       </svg>
-      <span class="logo__name">SafeTi</span>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#legend">О проекте</a></li>
+          <li class="main-nav__item"><a href="#values">Презентация</a></li>
+          <li class="main-nav__item"><a href="#services">Наша платформа</a></li>
+          <li class="main-nav__item"><a href="#services">Приемущества</a></li>
+          <li class="main-nav__item"><a href="#services">Отзывы</a></li>
+        </ul>
+        <button class="main-nav__toggle" type="button">
+          <span class="main-nav__open-btn-text visually-hidden">Mеню</span>
+        </button>
+      </nav>
     </div>
-    <nav class="main-nav main-nav--closed main-nav--nojs">
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="#legend">Отношения с инвесторами</a></li>
-        <li class="main-nav__item"><a href="#values">Планы доходов</a></li>
-        <li class="main-nav__item"><a href="#services">Услуги</a></li>
-      </ul>
-      <button class="main-nav__toggle" type="button">
-        <span class="main-nav__open-btn-text visually-hidden">Mеню</span>
-      </button>
-    </nav>
+    <div class="header__bottom">
+      <h1 class="header__heading">Подключитесь к проекту Илона Маска и зарабатывайте от 4000 $ ежемесячно!</h1>
+      <form class="form">
+        <h3 class="form__heading">Откройте счёт и начните зарабатывать</h3>
+        <input type="text" placeholder="Имя Фамилия">
+        <input type="text" placeholder="E-mail">
+        <input type="text" placeholder="Телефон">
+        <button class="btn btn__submit">
+          <svg width="39" height="31">
+            <use xlink:href="img/sprite.svg#wallet"></use>
+          </svg>
+          <span>Начать зарабатывать</span>
+        </button>
+      </form>
+    </div>
+
   </header>
   <main class="main">
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
+    <div class="revolution">
+      <div class="revolution__circles-wrapper">
+        <h2 class="revolution__heading">Это — революция, которая обеспечит каждому необходимый заработок</h2>
+        <div class="revolution__circles">
+          <div class="revolution__circle">98.7</div>
+          <div class="revolution__circle">300</div>
+        </div>
+      </div>
+
+      <div class="slider">
+        <div class=""> Это видео должно посмотреть как можно больше людей</div>
+      </div>
+
+    </div>
   </main>
 
   <footer class="page-footer">
