@@ -10,21 +10,18 @@
     margin-bottom: 20px;
     padding: 10px;
     background: rgba(245, 245, 245, 0.08);
-    border: 1px solid #fefdfb;
     border-radius: 15px;
   }
 }
 
 .form__heading {
   margin-bottom: 15px;
+  color: $forn--heading-color;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
 
   @media (max-width: $tablet-width) {
-    font-size: 12px;
-    line-height: 14px;
-    color: $nav-color;
     text-shadow: $basic-black 2px 0 10px;
   }
 }

@@ -1,0 +1,25 @@
+.action {
+    box-sizing: border-box;
+    display: flex;
+    min-height: 800px;
+    padding: 85px;
+    background: #141414 no-repeat url("../img/action-bcg.jpg");
+
+    @media (max-width: $tablet-width) {
+        min-height: 812px;
+        padding: 15px;
+        background: #141414 no-repeat url("../img/action-bcg-mob.jpg");
+    }
+}
+
+.action .form {
+    align-self: flex-end;
+    margin-bottom: 115px;
+    margin-left: auto;
+    max-width: 411px;
+
+    @media (max-width: $tablet-width) {
+        align-self: flex-start;
+        width: 100%;
+    }
+}
