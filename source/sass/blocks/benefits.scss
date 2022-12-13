@@ -1,0 +1,127 @@
+.benefits {
+    position: relative;
+}
+
+.benefits__header-wrapper {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 210px;
+    padding: 15px;
+
+    @media (max-width: $tablet-width) {
+        min-height: 140px;
+    }
+}
+
+.benefits__heading {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+
+    @media (max-width: $tablet-width) {
+        font-size: 22px;
+        line-height: 26px;
+    }
+}
+
+.benefits__list__wrapper {
+    min-height: 370px;
+    padding: 0 30px;
+    color: $basic-white;
+    background: linear-gradient(180deg, #121210 0%, #272727 100%);
+
+    @media (max-width: $tablet-width) {
+        margin-left: 40px;
+        padding: 40px 30px;
+        border-radius: 15px 0 0 15px;
+    }
+}
+
+.benefits__list {
+    display: flex;
+    justify-content: space-around;
+
+    @media (max-width: $tablet-width) {
+        flex-direction: column;
+    }
+}
+
+.benefits__list__item {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 285px;
+    min-height: 215px;
+    margin-top: 68px;
+    padding: 50px 12px;
+    background: linear-gradient(90deg, rgba(92, 92, 88, 0) 0%, rgba(200, 201, 201, 0.052) 100%);
+    filter: drop-shadow(4px 4px 15px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
+
+    @media (max-width: $tablet-width) {
+        min-height: unset;
+        margin-top: 18px;
+        padding: 10px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+.benefits__img-wrapper {
+    position: absolute;
+    top: -43%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: $bcg-benefits-img;
+
+    @media (max-width: $tablet-width) {
+        top: 50%;
+        left: -19%;
+        transform: translateY(-50%);
+        width: 45px;
+        height: 45px;
+    }
+}
+
+.benefits__icon {
+    @media (max-width: $tablet-width) {
+        width: 39px;
+        height: 39px;
+    }
+}
+
+.benefits__title {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.benefits__about {
+    font-size: 18px;
+
+    @media (max-width: $tablet-width) {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+.benefits__extra-img {
+    position: absolute;
+    right: 450px;
+    bottom: 40px;
+
+    @media (max-width: $tablet-width) {
+    }
+}
