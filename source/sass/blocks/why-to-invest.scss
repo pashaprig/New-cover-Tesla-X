@@ -1,0 +1,131 @@
+.why-to-invest {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 80px;
+
+    @media (max-width: $tablet-width) {
+        padding: 40px 15px;
+    }
+}
+
+.why-to-invest__heading {
+    margin: 0 180px 20px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+
+    @media (max-width: $tablet-width) {
+        margin: 0;
+        margin-bottom: 37px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+}
+
+.why-to-invest__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.why-to-invest__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+
+    & .why-to-invest__item-more {
+        display: none;
+    }
+
+    &--active .why-to-invest__item-more {
+        position: absolute;
+        top: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 380px;
+        padding: 43px 15px;
+        background: rgba(46, 45, 46, 0.8);
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+
+        @media (max-width: $tablet-width) {
+            width: calc(100% - 30px);
+        }
+    }
+
+    @media (max-width: $tablet-width) {
+        position: relative;
+    }
+}
+
+.why-to-invest__item-more-btn {
+    display: none;
+
+    @media (max-width: $tablet-width) {
+        z-index: 1;
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 40px;
+        fill: none;
+        cursor: pointer;
+        why-to-invest__item-more &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+    }
+}
+
+.why-to-invest__portret-wrapper {
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 280px;
+    height: 280px;
+    margin-bottom: 12px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.5));
+}
+
+.why-to-invest__portret {
+    scale: 1.26;
+    border-radius: 50%;
+}
+
+.why-to-invest__quote {
+    align-self: flex-start;
+    margin: 12px 0;
+    font-size: 23px;
+    line-height: 28px;
+
+    @media (max-width: $tablet-width) {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+.why-to-invest__cite {
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+
+    @media (max-width: $tablet-width) {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+.why-to-invest__about {
+    color: $basic-white;
+    font-size: 20px;
+    line-height: 24px;
+
+    @media (max-width: $tablet-width) {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}

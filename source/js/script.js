@@ -1,11 +1,10 @@
-// MENU
-
+// Menu
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
 
 navMain.classList.remove('main-nav--nojs');
 
-navToggle.addEventListener('click', function() {
+navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('main-nav--closed')) {
     navMain.classList.remove('main-nav--closed');
     navMain.classList.add('main-nav--opened');
@@ -25,4 +24,28 @@ const navLinckHandleClick = () => {
 
 links.forEach(link => {
   link.addEventListener('click', navLinckHandleClick)
+})
+
+
+// Div.Why-to-invest hide/show more info
+const showButns = document.querySelectorAll(".why-to-invest__item-more-btn");
+
+// Desktop onPortretImgHover
+const onItemMouseOver = (item) => {
+  if (window.screen.width > 1023) {
+    item.classList.add('why-to-invest__item--active')
+  }
+};
+
+const onItemMouseOut = (item) => {
+  if (window.screen.width > 1023) {
+    item.classList.remove('why-to-invest__item--active')
+  }
+};
+
+// Mobile onButtonsMoreClick
+showButns.forEach(sBtn => {
+  sBtn.addEventListener('click', (e) => {
+    e.target.parentElement.classList.toggle('why-to-invest__item--active');
+  });
 })

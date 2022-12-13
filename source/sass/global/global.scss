@@ -15,7 +15,8 @@ h1,
 h2,
 h3,
 p,
-ul {
+ul,
+blockquote {
   margin: 0;
   padding: 0;
 }
@@ -34,6 +35,17 @@ a {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+a,
+.btn {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active{
+    opacity: 0.6;
+  }
 }
 
 .mobile-only {
