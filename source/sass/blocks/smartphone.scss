@@ -1,0 +1,85 @@
+.smartphone {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 800px;
+  padding-top: 100px;
+  color: $nav-color;
+  background: #141414 no-repeat url("../img/phone-bcg.png");
+
+  @media (max-width: $tablet-width) {
+    padding: 50px 15px 0;
+    background: 50% #141414 no-repeat url("../img/phone-bcg.png");
+  }
+}
+
+.smartphone__text-wrapper {
+  max-width: 665px;
+}
+
+.smartphone__heading {
+  margin-bottom: 14px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+
+.smartphone__about {
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 22px;
+
+  & span {
+    color: $main-color;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 50px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.smartphone__action {
+  margin-bottom: 30px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.smartphone__platform-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  color: $basic-white;
+
+  @media (max-width: $tablet-width) {
+    gap: 17px;
+  }
+}
+
+.smartphone__platform-item {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  max-width: 189px;
+  padding: 6px 10px 6px 24px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid $device-border;
+  border-radius: 15px;
+
+  @media (max-width: $tablet-width) {
+    max-width: 164px;
+    min-height: 55px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
