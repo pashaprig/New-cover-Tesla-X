@@ -1,10 +1,17 @@
 .page-footer {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  background-color: lightcoral;
+  align-items: center;
+  justify-content: center;
+  height: 92px;
+  padding: 15px;
+  background: $bcg-page-footer;
+}
 
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-  }
+.page-footer__about {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 19px;
+  color: $nav-color;
 }
