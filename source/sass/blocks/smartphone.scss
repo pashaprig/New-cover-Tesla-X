@@ -9,7 +9,7 @@
   background: #141414 no-repeat url("../img/phone-bcg.png");
 
   @media (max-width: $tablet-width) {
-    padding: 50px 15px 0;
+    padding: 40px 15px 0;
     background: 50% #141414 no-repeat url("../img/phone-bcg.png");
   }
 }
@@ -40,9 +40,9 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 50px;
-    font-size: 12px;
-    line-height: 14px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 16px;
   }
 }
 
@@ -72,6 +72,7 @@
   column-gap: 10px;
   max-width: 189px;
   padding: 6px 10px 6px 24px;
+  font-family: "Inter", "Arial", sans-serif;
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid $device-border;
   border-radius: 15px;
