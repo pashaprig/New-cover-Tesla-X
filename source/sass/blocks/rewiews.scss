@@ -3,8 +3,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-height: 800px;
-    padding: 60px;
+    // max-height: 800px;
+    padding: 60px 40px;
     color: $nav-color;
     background: $bcg-rewiews;
 
@@ -39,6 +39,12 @@
     }
 }
 
+.rewiews__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+
 .rewiews__item {
     padding: 20px;
     background: rgba(84, 84, 84, 0.1);
@@ -53,7 +59,7 @@
     object-fit: cover;
     margin-right: 16px;
     border-radius: 50%;
-    border: 1px solid $basic-white;
+    border: 1px solid $avatar-border;
 }
 
 .rewiews__name {
@@ -74,7 +80,7 @@
     margin-bottom: 16px;
     margin-left: 35px;
     padding-left: 34px;
-    border-left: 1px solid #696767;
+    border-left: 1px solid $avatar-border;
 }
 
 .rewiews__card {
