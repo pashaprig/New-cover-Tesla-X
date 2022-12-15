@@ -1,17 +1,29 @@
 .video {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 800px;
+  height: fit-content;
   background: $text-color no-repeat url("../img/video-bcg.jpg");
 
   @media (max-width: $tablet-width) {
     min-height: 208px;
     background-size: cover;
+  }
+}
 
-    & svg {
-      width: 72px;
-      height: 72px;
-    }
+.video__play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 72px;
+  height: 72px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+
+  @media (max-width: $tablet-width) {
+    top: 40%;
   }
 }

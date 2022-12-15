@@ -52,6 +52,7 @@
     </div>
 
   </header>
+
   <main class="main">
     <div class="revolution">
       <div class="revolution__circles-wrapper">
@@ -83,9 +84,14 @@
     </div>
 
     <div class="video">
-      <svg width="137" height="137">
-        <use xlink:href="img/sprite.svg#play"></use>
-      </svg>
+      <video id="video" width="100%" poster="img/video-bcg.jpg" src="video/video.mp4">
+        Your browser doesn't support HTML5 video tag.
+      </video>
+      <button class="btn video__play-btn" id="play-btn" type="button" onclick="handlePlayClick(this)">
+        <svg width="137" height="137">
+          <use xlink:href="img/sprite.svg#play"></use>
+        </svg>
+      </button>
     </div>
 
     <div class="smartphone">
@@ -217,11 +223,13 @@
           <svg width="31" height="22">
             <use xlink:href="img/sprite.svg#quote-begin"></use>
           </svg>
-          <blockquote class="why-to-invest__quote">Инвестиции приносят стабильно высокий доход, не требуя вашего непосредственного участия в процессе - продолжайте вести свой бизнес, пока ваш капитал растет! </blockquote>
+          <blockquote class="why-to-invest__quote">Инвестиции приносят стабильно высокий доход, не требуя вашего
+            непосредственного участия в процессе - продолжайте вести свой бизнес, пока ваш капитал растет! </blockquote>
           <cite class="why-to-invest__cite">Уоррен Баффет</cite>
 
           <div class="why-to-invest__item-more">
-            <p class="why-to-invest__about">Предприниматель, один из крупнейших инвесторов в мире, благотворитель. За выгодные инвестиции получил прозвище Оракул.</p>
+            <p class="why-to-invest__about">Предприниматель, один из крупнейших инвесторов в мире, благотворитель. За
+              выгодные инвестиции получил прозвище Оракул.</p>
           </div>
         </li>
 
@@ -232,11 +240,13 @@
           <svg width="31" height="22">
             <use xlink:href="img/sprite.svg#quote-begin"></use>
           </svg>
-          <blockquote class="why-to-invest__quote">Став инвестором, вы не только достигнете полной финансовой независимости, но и обеспечите себе стабильность на долгие годы. </blockquote>
+          <blockquote class="why-to-invest__quote">Став инвестором, вы не только достигнете полной финансовой
+            независимости, но и обеспечите себе стабильность на долгие годы. </blockquote>
           <cite class="why-to-invest__cite">Кэти Вуд</cite>
 
           <div class="why-to-invest__item-more">
-            <p class="why-to-invest__about">Инвестор и основательница инвестиционной компании ARK Invest. Специализируется на революционных технологиях, таких как искусственный интеллект.</p>
+            <p class="why-to-invest__about">Инвестор и основательница инвестиционной компании ARK Invest.
+              Специализируется на революционных технологиях, таких как искусственный интеллект.</p>
           </div>
         </li>
       </ul>
@@ -325,7 +335,8 @@
                   <use xlink:href="img/sprite.svg#1000"></use>
                 </svg>
               </div>
-              <p class="rewiews__text">Решил попробовать себя в роли инвестора на проекте. Даже не имея опыта, я сразу влился в процесс и начал зарабатывать 500 евро в неделю. Быстро, эффективно, надежно! 5 звезд</p>
+              <p class="rewiews__text">Решил попробовать себя в роли инвестора на проекте. Даже не имея опыта, я сразу
+                влился в процесс и начал зарабатывать 500 евро в неделю. Быстро, эффективно, надежно! 5 звезд</p>
             </div>
             <div class="rewiews__sum rewiews__sum--jc-sa">
               <span class="rewiews__invest">Заработал</span>
@@ -384,7 +395,8 @@
                   <use xlink:href="img/sprite.svg#200"></use>
                 </svg>
               </div>
-              <p class="rewiews__text">Проект помог мне выбраться из финансовой ямы во время карантина и действительно изменил мою жизнь! Это очень удобно и просто, несмотря на то, что я начинал совсем без опыта!</p>
+              <p class="rewiews__text">Проект помог мне выбраться из финансовой ямы во время карантина и действительно
+                изменил мою жизнь! Это очень удобно и просто, несмотря на то, что я начинал совсем без опыта!</p>
             </div>
             <div class="rewiews__sum rewiews__sum--jc-sa">
               <span class="rewiews__invest">Заработал</span>
@@ -443,7 +455,8 @@
                   <use xlink:href="img/sprite.svg#1000"></use>
                 </svg>
               </div>
-              <p class="rewiews__text">Были у меня и взлеты, и падения. Свой первый счет я открыла, имея в кармане 1000 долларов. По опыту скажу, что важно выбрать надежного трейдера. Вышла в хороший плюс</p>
+              <p class="rewiews__text">Были у меня и взлеты, и падения. Свой первый счет я открыла, имея в кармане 1000
+                долларов. По опыту скажу, что важно выбрать надежного трейдера. Вышла в хороший плюс</p>
             </div>
             <div class="rewiews__sum rewiews__sum--jc-sa">
               <span class="rewiews__invest">Заработала</span>
@@ -502,7 +515,9 @@
                   <use xlink:href="img/sprite.svg#200"></use>
                 </svg>
               </div>
-              <p class="rewiews__text">Проект — реальная возможность обеспечить себе достойную жизнь. Очень удобно и легко — всем советую. Присоединился после того, как меня сократили на карантине. Работаю в свободном графике. </p>
+              <p class="rewiews__text">Проект — реальная возможность обеспечить себе достойную жизнь. Очень удобно и
+                легко — всем советую. Присоединился после того, как меня сократили на карантине. Работаю в свободном
+                графике. </p>
             </div>
             <div class="rewiews__sum rewiews__sum--jc-sa">
               <span class="rewiews__invest">Заработал</span>
@@ -568,6 +583,7 @@
     </svg>
     <p class="page-footer__about">© 2022 Все права защищены</p>
   </footer>
+
   <script src="js/script.min.js"></script>
 </body>
 

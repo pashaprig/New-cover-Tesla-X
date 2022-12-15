@@ -49,3 +49,24 @@ showButns.forEach(sBtn => {
     e.target.parentElement.classList.toggle('why-to-invest__item--active');
   });
 })
+
+
+// Video
+const video = document.querySelector("#video")
+const playButton = document.querySelector("#play-btn")
+
+const changeVidoeForMob = () => {
+  if (window.screen.width < 1024) {
+    console.log('hi');
+    video.setAttribute("src", "video/video-mob.mp4")
+
+  }
+}
+
+changeVidoeForMob();
+
+const handlePlayClick = () => {
+  playButton.style.display = "none";
+  video.setAttribute("controls", "controls")
+  video.play()
+}

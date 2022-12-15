@@ -76,6 +76,13 @@ const copyImages = () => {
 
 exports.images = copyImages;
 
+const copyVideos = () => {
+  return gulp.src("source/video/**/*.*")
+    .pipe(gulp.dest("build/video"))
+}
+
+exports.videos = copyVideos;
+
 // WebP
 
 // const createWebp = () => {
@@ -160,6 +167,7 @@ const build = gulp.series(
   clean,
   copy,
   optimizeImages,
+  copyVideos,
   gulp.parallel(
     styles,
     html,
@@ -178,6 +186,7 @@ exports.default = gulp.series(
   clean,
   copy,
   copyImages,
+  copyVideos,
   gulp.parallel(
     styles,
     html,
