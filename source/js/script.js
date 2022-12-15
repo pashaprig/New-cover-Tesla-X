@@ -70,3 +70,54 @@ const handlePlayClick = () => {
   video.setAttribute("controls", "controls")
   video.play()
 }
+
+// Sliders
+
+$(document).ready(function () {
+  // Revolution
+
+  $("#slider-revolution").slick({
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+
+  // Why-to-invest
+
+  $("#why-to-invest-slider").slick({
+    infinite: false,
+    dots: false,
+    arrows: false,
+    swipe: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          infinite: true,
+          arrows: true,
+          swipe: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        }
+      },
+    ]
+  });
+
+  // Rewiews
+
+  $("#slider-rewiews").slick({
+    dots: true,
+    slidesToShow: 3,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+        }
+      },
+    ]
+  });
+});

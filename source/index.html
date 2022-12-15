@@ -54,7 +54,7 @@
   </header>
 
   <main class="main">
-    <div class="revolution">
+    <section class="revolution">
       <div class="revolution__circles-wrapper">
         <h2 class="revolution__heading">Это — революция, которая обеспечит каждому необходимый заработок</h2>
         <div class="revolution__circles">
@@ -69,21 +69,51 @@
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="slider">
-        <div class="slider__card">
+    <section class="slider" id="slider-revolution">
+      <div class="slider__card">
+        <div class="slider__card-wrapper">
           <svg width="31" height="22">
             <use xlink:href="img/sprite.svg#quote-begin"></use>
           </svg>
-          <p class="slider__text">
-            Это видео должно посмотреть как можно больше людей
-          </p>
-          <img src="./img/wsj.png" alt="Wall street journal" width="141" height="47" class="slider__suorse">
+          <p class="slider__text">Это видео должно посмотреть как можно больше людей</p>
+          <img src="./img/wsj.png" alt="Wall street journal" width="141" height="47" class="wsj">
         </div>
       </div>
-    </div>
 
-    <div class="video">
+      <div class="slider__card">
+        <div class="slider__card-wrapper">
+          <svg width="31" height="22">
+            <use xlink:href="img/sprite.svg#quote-begin"></use>
+          </svg>
+          <p class="slider__text">Можно увидеть как легко делаются деньги</p>
+          <img src="./img/bbc.png" alt="Wall street journal" width="153" height="47" class="bbc">
+        </div>
+      </div>
+
+      <div class="slider__card">
+        <div class="slider__card-wrapper">
+          <svg width="31" height="22">
+            <use xlink:href="img/sprite.svg#quote-begin"></use>
+          </svg>
+          <p class="slider__text">Презентация технологии, которая ошеломляет</p>
+          <img src="./img/nyt.png" alt="Wall street journal" width="260" height="39" class="n-y t">
+        </div>
+      </div>
+
+      <div class="slider__card">
+        <div class="slider__card-wrapper">
+          <svg width="31" height="22">
+            <use xlink:href="img/sprite.svg#quote-begin"></use>
+          </svg>
+          <p class="slider__text">Просто, понятно и по делу</p>
+          <img src="./img/cmc.png" alt="Wall street journal" width="260" height="47" class="cmc">
+        </div>
+      </div>
+    </section>
+
+    <section class="video">
       <video id="video" width="100%" poster="img/video-bcg.jpg" src="video/video.mp4">
         Your browser doesn't support HTML5 video tag.
       </video>
@@ -92,9 +122,9 @@
           <use xlink:href="img/sprite.svg#play"></use>
         </svg>
       </button>
-    </div>
+    </section>
 
-    <div class="smartphone">
+    <section class="smartphone">
       <div class="smartphone__text-wrapper">
         <h2 class="smartphone__heading">Используйте свой смартфон!</h2>
         <p class="smartphone__about">Новейший проект <span>Tesla X</span> доступен на смартфонах, планшетах и
@@ -130,9 +160,9 @@
           <span class="smartphone__title">Available on Android</span>
         </li>
       </ul>
-    </div>
+    </section>
 
-    <div class="benefits">
+    <section class="benefits">
       <div class="benefits__header-wrapper">
         <h2 class="benefits__heading">Преимущества инвестирования с нами</h2>
       </div>
@@ -191,11 +221,11 @@
       <svg class="benefits__extra-img" width="48" height="48">
         <use xlink:href="img/sprite.svg#9dots"></use>
       </svg>
-    </div>
+    </section>
 
-    <div class="why-to-invest">
+    <section class="why-to-invest">
       <h2 class="why-to-invest__heading">Почему вы должны начать инвестировать в Tesla X?</h2>
-      <ul class="why-to-invest__list">
+      <ul class="why-to-invest__list" id="why-to-invest-slider">
         <li class="why-to-invest__item" onmouseover="onItemMouseOver(this)" onmouseout="onItemMouseOut(this)">
           <svg class="why-to-invest__item-more-btn" width="28" height="28">
             <use xlink:href="img/sprite.svg#more"></use>
@@ -217,6 +247,9 @@
         </li>
 
         <li class="why-to-invest__item" onmouseover="onItemMouseOver(this)" onmouseout="onItemMouseOut(this)">
+          <svg class="why-to-invest__item-more-btn" width="28" height="28">
+            <use xlink:href="img/sprite.svg#more"></use>
+          </svg>
           <div class="why-to-invest__portret-wrapper">
             <img class="why-to-invest__portret" width="100%" height="100%" src="img/warren.jpg" alt="Уоррен Баффет">
           </div>
@@ -234,6 +267,9 @@
         </li>
 
         <li class="why-to-invest__item" onmouseover="onItemMouseOver(this)" onmouseout="onItemMouseOut(this)">
+          <svg class="why-to-invest__item-more-btn" width="28" height="28">
+            <use xlink:href="img/sprite.svg#more"></use>
+          </svg>
           <div class="why-to-invest__portret-wrapper">
             <img class="why-to-invest__portret" width="100%" height="100%" src="img/ketty.jpg" alt="Кэти Вуд">
           </div>
@@ -250,13 +286,13 @@
           </div>
         </li>
       </ul>
-    </div>
+    </section>
 
-    <div class="rewiews">
+    <section class="rewiews">
       <h2 class="rewiews__heading">Отзывы участников программы Tesla X</h2>
       <p class="rewiews__about">Каждый день к проекту Илона Маска присоединяются десятки людей со всего мира. Они с
         удовольствием делятся результатами своего заработка, ведь он намного выше средней зарплаты!</p>
-      <ul class="rewiews__list">
+      <ul class="rewiews__list" id="slider-rewiews">
         <li class="rewiews__item">
           <div class="rewiews__author">
             <img class="rewiews__avatar" src="img/avatars/inga.jpg" width="70" height="70" alt="Инга Дянченко">
@@ -559,9 +595,9 @@
           </ul>
         </li>
       </ul>
-    </div>
+    </section>
 
-    <div class="action">
+    <section class="action">
       <form class="form">
         <h3 class="form__heading">Откройте счёт и начните зарабатывать</h3>
         <input type="text" placeholder="Имя Фамилия">
@@ -574,7 +610,7 @@
           <span>Начать зарабатывать</span>
         </button>
       </form>
-    </div>
+    </section>
   </main>
 
   <footer class="page-footer">
@@ -584,7 +620,9 @@
     <p class="page-footer__about">© 2022 Все права защищены</p>
   </footer>
 
-  <script src="js/script.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

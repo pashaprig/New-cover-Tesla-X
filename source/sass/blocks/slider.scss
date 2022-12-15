@@ -1,5 +1,65 @@
+/* Слайдер */
+.slick-slider {
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized {
+}
+/* Слайдер с точками */
+.slick-slider.slick-dotted {
+}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+/* Слайд */
+.slick-slide {
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {
+}
+/* Слайд основной */
+.slick-slide.slick-current {
+}
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+/* Клонированный слайд */
+.slick-slide.slick-cloned {
+}
+/* Стрелка */
+.slick-arrow {
+  cursor: pointer;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+}
+/* Точки (булиты) */
+.slick-dots {
+}
+.slick-dots li {
+}
+/* Активная точка */
+.slick-dots li.slick-active {
+}
+/* Элемент точки */
+.slick-dots li button {
+}
+
+/* Слайдер под блоком revolution */
 .slider {
+  position: relative;
   margin-top: 60px;
+  margin-bottom: 20px;
 
   @media (max-width: $tablet-width) {
     margin-top: 36px;
@@ -7,14 +67,21 @@
 }
 
 .slider__card {
+  width: 100%;
+
+  @media (max-width: $tablet-width) {
+    & img {
+      max-width: 50%;
+    }
+  }
+}
+
+.slider__card-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 427px;
-
-  @media (max-width: $tablet-width) {
-    max-width: 266px
-  }
+  max-width: 450px;
+  margin: 0 auto;
 }
 
 .slider__text {
@@ -25,7 +92,158 @@
   color: $basic-black;
 
   @media (max-width: $tablet-width) {
+    padding: 0 55px;
     font-size: 22px;
     line-height: 26px;
   }
+}
+
+.slider .slick-arrow {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 58px;
+  font-size: 0;
+  border: none;
+
+  @media (max-width: $tablet-width) {
+    width: 14px;
+    height: 27px;
+  }
+}
+
+.slider .slick-arrow.slick-prev {
+  left: 170px;
+  background: no-repeat 0 0 / 100% url(../img/icons/arrow-prev.svg);
+
+  @media (max-width: $tablet-width) {
+    left: 18px;
+  }
+}
+
+.slider .slick-arrow.slick-next {
+  background: no-repeat 0 0 / 100% url(../img/icons/arrow-next.svg);
+  right: 170px;
+
+  @media (max-width: $tablet-width) {
+    right: 18px;
+  }
+}
+
+.slider .slick-dots {
+  display: flex;
+  justify-content: center;
+  min-height: 20px;
+  margin-top: 10px;
+}
+
+.slider .slick-dots li button {
+  padding: 0;
+  width: 70px;
+  height: 0;
+  font-size: 0;
+  border: 2px solid $slider-border;
+  background: $slider-border;
+  transition: all 0.3s;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.slider .slick-dots li.slick-active button {
+  border: 6px solid $main-color;
+  border-radius: 6px;
+  background: $main-color;
+  transition: all 0.3s;
+}
+
+/* Слайдер why-to-invest */
+
+.why-to-invest__list .slick-arrow {
+  @media (max-width: $tablet-width) {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0;
+    border: none;
+    width: 14px;
+    height: 27px;
+  }
+}
+
+.why-to-invest__list .slick-arrow.slick-prev {
+  @media (max-width: $tablet-width) {
+    left: 18px;
+    background: no-repeat 0 0 / 100% url(../img/icons/arrow-prev.svg);
+  }
+}
+
+.why-to-invest__list .slick-arrow.slick-next {
+  @media (max-width: $tablet-width) {
+    background: no-repeat 0 0 / 100% url(../img/icons/arrow-next.svg);
+    right: 18px;
+  }
+}
+
+/* Слайдер rewiews */
+.rewiews .slick-arrow {
+  z-index: 1;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 58px;
+  font-size: 0;
+  border: none;
+
+  @media (max-width: $tablet-width) {
+    width: 14px;
+    height: 27px;
+  }
+}
+
+.rewiews .slick-arrow.slick-prev {
+  left: -20px;
+  background: no-repeat 0 0 / 100% url(../img/icons/arrow-prev.svg);
+
+  @media (max-width: $tablet-width) {
+    left: 18px;
+  }
+}
+
+.rewiews .slick-arrow.slick-next {
+  background: no-repeat 0 0 / 100% url(../img/icons/arrow-next.svg);
+  right: -20px;
+
+  @media (max-width: $tablet-width) {
+    right: 18px;
+  }
+}
+
+.rewiews .slick-dots {
+  display: flex;
+  justify-content: center;
+  min-height: 21px;
+  margin-top: 40px;
+}
+
+.rewiews .slick-dots li button {
+  padding: 0;
+  width: 70px;
+  height: 0;
+  font-size: 0;
+  border: 2px solid $slider-border;
+  background: $slider-border;
+  transition: all 0.3s;
+}
+
+.rewiews .slick-dots li.slick-active button {
+  border: 6px solid $main-color;
+  border-radius: 6px;
+  background: $main-color;
+  transition: all 0.3s;
 }

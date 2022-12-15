@@ -1,28 +1,29 @@
 .why-to-invest {
     display: flex;
     flex-direction: column;
-    padding: 50px 80px;
+    padding: 50px 10px;
 
     @media (max-width: $tablet-width) {
-        padding: 40px 15px;
+        padding: 40px 15px 10px;
     }
 }
 
 .why-to-invest__heading {
-    margin: 0 180px 20px;
+    margin: 0 260px 20px;
     font-weight: 500;
     font-size: 40px;
     line-height: 48px;
 
     @media (max-width: $tablet-width) {
         margin: 0;
-        margin-bottom: 37px;
+        margin-bottom: 10px;
         font-size: 22px;
         line-height: 26px;
     }
 }
 
 .why-to-invest__list {
+    position: relative;
     display: flex;
     justify-content: space-between;
 }
@@ -33,6 +34,8 @@
     flex-direction: column;
     align-items: center;
     max-width: 350px;
+    margin: 0 60px;
+    padding-top: 40px;
 
     & .why-to-invest__item-more {
         display: none;
@@ -51,7 +54,7 @@
         border-radius: 15px;
 
         @media (max-width: $tablet-width) {
-            width: calc(100% - 30px);
+            width: calc(100% + 40px);
         }
     }
 
@@ -67,11 +70,12 @@
         z-index: 1;
         display: block;
         position: absolute;
-        top: 10px;
-        right: 40px;
+        top: 15px;
+        right: 15px;
         fill: none;
         cursor: pointer;
-        why-to-invest__item-more &:hover {
+
+        &:hover {
             opacity: 0.8;
         }
 
@@ -89,6 +93,11 @@
     margin-bottom: 12px;
     border-radius: 50%;
     filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.5));
+
+    @media (max-width: $tablet-width) {
+      width: 240px;
+      height: 240px;
+  }
 }
 
 .why-to-invest__portret {
