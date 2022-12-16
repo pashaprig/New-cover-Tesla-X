@@ -66,16 +66,33 @@
 }
 
 .smartphone__platform-item {
-  box-sizing: border-box;
   display: flex;
   align-items: center;
-  column-gap: 10px;
+  box-sizing: border-box;
+  min-height: 56px;
   max-width: 189px;
-  padding: 6px 10px 6px 24px;
   font-family: "Inter", "Arial", sans-serif;
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid $device-border;
   border-radius: 15px;
+
+  & a {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 6px 10px 6px 24px;
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid #EFEFF1;
+    box-shadow: 0px 2px 30px rgba(243, 243, 236, 0.6);
+  }
+
+  &:active {
+    background: rgba(255, 255, 255, 0.35);
+    border: 1px solid #EFEFF1;
+  }
 
   @media (max-width: $tablet-width) {
     max-width: 164px;

@@ -11,6 +11,17 @@
     padding: 10px;
     background: rgba(245, 245, 245, 0.08);
     border-radius: 15px;
+
+    &:hover {
+      background: rgba(245, 245, 245, 0.08);
+      border: 1px solid #fefdfb;
+      box-shadow: 0px 2px 30px rgba(243, 243, 236, 0.6);
+    }
+
+    &:active {
+      background: rgba(245, 245, 245, 0.2);
+      border: 2px solid #fefdfb;
+    }
   }
 }
 
@@ -39,6 +50,18 @@
   border: 1px solid #171a20;
   box-shadow: 0px 2px 30px rgba(255, 255, 255, 0.4);
   border-radius: 15px;
+
+  &:hover {
+    background: linear-gradient(172.38deg, #fc4e39 -8.81%, #fc4e39 59.6%, #9b2a21 108.81%);
+    border: 1px solid #171a20;
+    box-shadow: 0px 2px 30px rgba(255, 255, 255, 0.7);
+  }
+
+  &:active {
+    background: linear-gradient(172.38deg, #9B2A21 -8.81%, #FC4E39 59.6%, #FC4E39 108.81%);
+    border: 1px solid #171A20;
+    box-shadow: 0px 2px 30px rgba(255, 255, 255, 0.4);
+  }
 
   & svg {
     fill: none;
